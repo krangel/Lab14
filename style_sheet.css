@@ -1,0 +1,49 @@
+
+div.header
+{
+vertical-align:middle;
+height:45px;
+color:White;
+background-color:FireBrick;
+text-align:center;
+margin-bottom:2px;
+}
+
+div.menu
+{
+padding-left:5px;
+padding-bottom:100%;
+font-size:18px;
+background-color:IndianRed;
+width:14%;
+height:100%;
+float:left
+}
+
+div.contentmain
+{
+padding-bottom:25%;
+background-color:#EEEEEE;width:85%;float:right;
+}
+
+div.contentdepth
+{
+padding-bottom:48%;
+background-color:#EEEEEE;width:85%;float:right;
+}
+div p
+{
+font-size:20px;
+}
+
+img
+{
+width:75%;
+height:100%;
+border:1px solid #000000;
+opacity:0.4;
+filter:alpha(opacity=40);
+}
+
+a:link {color:#9900CC;}      /* unvisited link */
+a:visited {color:#660066;}  /* visited link */
