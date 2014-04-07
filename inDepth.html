@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Attack on Titan</title>
+	<link REL="StyleSheet" TYPE="text/css" HREF="style_sheet.css"> 
+	<style>
+		#head
+                {
+                font-family: Verdana, Geneva, sans-serif;
+                border-collapse:collapse;
+                }
+        #head td.name 
+                {
+                text-align:left;
+                }
+        #head td, #head th
+                {
+                text-align:right;
+                font-size:1.2em;
+                border:1px solid #000;
+                padding:3px 7px 2px 7px;
+                }
+        #head th
+                {
+                font-size:1.4em;
+                text-align:left;
+                padding-top:5px;
+                padding-bottom:4px;
+                background-color:Salmon;
+                color:#fff;
+                }
+        #head tr.alt td
+                {
+                color:#000;
+                background-color:LightCoral;
+                }
+        #hidden
+        	{
+        	display:None;
+        	}
+
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+		<script>
+				function hiddenElement(){
+					if(document.getElementById("hidden").style.display == "block")
+						document.getElementById("hidden").style.display = "None";
+					else
+						document.getElementById("hidden").style.display = "block";
+					}
+		</script>
+		<script>
+			$(document).ready(function(){
+  				$("#hide").click(function(){
+    			$("table").hide();
+  			});
+  				$("#show").click(function(){
+    			$("table").show();
+  			});
+		});
+		</script>
+	</head>
+
+	<body>
+
+		<div class="header">
+			<h1>Shingeki no Kyojin</h1>
+		</div>
+
+		<div class="menu">
+			<nav>
+				<a href='../rangel.html'>Home</a><br>
+				<a href='http://www.youtube.com/watch?v=MGRm4IzK1SQ'>Trailer</a><br>
+				<a href='http://www.crunchyroll.com/attack-on-titan'>Watch Now!!!</a><br>
+				<a href='http://www.onemanga.me/Attack_on_Titan/'>Read More</a><br>
+				<a href='http://shingekinokyojin.wikia.com/wiki/Shingeki_no_Kyojin_Wiki'>Wiki</a><br>
+				<a href='../inDepth.html'>inDepth</a></li>
+        	</nav>
+		</div>
+
+		<div class="contentdepth">
+			<table id="head">
+				<tr>
+					<th>Character Name</th>
+					<th>Battle Skill</th>
+					<th>Initiative</th>
+					<th>Strategy</th>
+					<th>Teamwork</th>
+				</tr>
+				<tr>
+					<td>Eren Yeager</td>
+					<td>9</td>
+					<td>10</td>
+					<td>3</td>
+					<td>5</td>
+				</tr>
+				<tr class="alt">
+					<td>Mikasa Ackerman</td>
+					<td>10</td>
+					<td>9</td>
+					<td>8</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>Armin Arlert</td>
+					<td>2</td>
+					<td>6</td>
+					<td>10</td>
+					<td>8</td>
+				</tr>
+				<tr class="alt">
+					<td>Reiner Braun</td>
+					<td>9</td>
+					<td>7</td>
+					<td>7</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>Bertolt Hoover</td>
+					<td>9</td>
+					<td>4</td>
+					<td>6</td>
+					<td>9</td>
+				</tr>
+				<tr class="alt">
+					<td>Annie Leonhart</td>
+					<td>10</td>
+					<td>7</td>
+					<td>7</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>Levi</td>
+					<td>11</td>
+					<td>10</td>
+					<td>8</td>
+					<td>2</td>
+				</tr>
+			</table>
+			<br>
+				<button id="hide">Hide Table</button>
+				<button id="show">Show Table</button>
+			<p>
+			Who is your favorite character?
+			</p>
+  			Click on a name to check out their wiki.
+  			<nav>
+  			<ul>
+	  			<li type=square><a href="http://shingekinokyojin.wikia.com/wiki/Eren_Yeager" style="text-decoration:none;">Eren Yeager</a></li>
+  				<li type=square><a href="http://shingekinokyojin.wikia.com/wiki/Mikasa_Ackerman" style="text-decoration:none;">Mikasa Ackerman</a></li>
+  				<li type=square><a href="http://shingekinokyojin.wikia.com/wiki/Armin_Arlert" style="text-decoration:none;">Armin Arlert</a></li>
+  				<li type=square><a href="http://shingekinokyojin.wikia.com/wiki/Reiner_Braun" style="text-decoration:none;">Reiner Braun</a></li>
+  				<li type=square><a href="http://shingekinokyojin.wikia.com/wiki/Bertolt_Hoover" style="text-decoration:none;">Bertolt Hoover</a></li>
+  				<li type=square><a href="http://shingekinokyojin.wikia.com/wiki/Annie_Leonhart" style="text-decoration:none;">Annie Leonhart</a></li>
+  				<li type=square><a href="http://shingekinokyojin.wikia.com/wiki/Levi" style="text-decoration:none;">Levi</a></li>
+			</ul>
+			</nav>
+			<br>
+			<br>
+			<p id="hidden">
+				<img src="characters.jpg" alt="Attack on Titan">
+			</p>
+			<button onclick="hiddenElement()">Show the Team!!</button>	
+		</div>
+		<div id="footer" style="background-color:silver;clear:both;text-align:center;">
+			Copyright © Rangel Inc
+		</div>
+	</body>
+</html> 
